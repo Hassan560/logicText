@@ -1,12 +1,12 @@
 // question 1
 
-let text = 'apple, pears # and banana'
+let text = `SBS, Clifton $ and Finosys \n Development \n Application`
 newText = text.split("");
 let newString = ''
 let words;
 for (var i = 0; i < newText.length; i++) {
     words = newText[i]
-    if (words.indexOf("#" || "/n")) {
+    if (words.indexOf("$" || "/n")) {
         newString += words
     }
 }
